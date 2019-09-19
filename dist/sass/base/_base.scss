@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (min-width: 1800px) {
+    font-size: 75%;
+  }
+}
+
+body {
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: "Open Sans", serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.fadeIn {
+  z-index: 10;
+}
+
+.animate_content {
+  animation: animate 3s ease;
+}
+
+@keyframes animate {
+  10% {
+    transform: scale(1, 0.002);
+  }
+  35% {
+    transform: scale(0.2, 0.002);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.2, 0.002);
+    opacity: 0;
+  }
+  85% {
+    transform: scale(1, 0.002);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.lolowood {
+  transform: translateY(-30rem);
+}

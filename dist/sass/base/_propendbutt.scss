@@ -1,0 +1,481 @@
+.contact {
+  height: 150vh;
+  background-color: #191a19;
+
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+
+  position: relative;
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    grid-column: 7 / 9;
+    position: absolute;
+    left: -40%;
+    grid-row: 3 / 8;
+
+    &__heading {
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: #89775f;
+      letter-spacing: 2.4px;
+      font-family: "Cardo";
+      margin-bottom: 2rem;
+      font-weight: 400;
+      text-align: center;
+
+      @media only screen and(max-width: 1430px) {
+        width: 110%;
+      }
+
+      @media only screen and(max-width: 1301px) {
+        width: 120%;
+      }
+
+      @media only screen and(max-width: 1095px) {
+        width: 130%;
+      }
+
+      @media only screen and(max-width: 1009px) {
+        width: 140%;
+        margin-left: -5rem;
+      }
+
+      @media only screen and(max-width: 940px) {
+        width: 150%;
+      }
+
+      @media only screen and(max-width: 792px) {
+        width: 160%;
+      }
+
+      @media only screen and(max-width: 740px) {
+        width: 170%;
+      }
+    }
+
+    &__d {
+      font-size: 1.2rem;
+      color: #89775f;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      width: 90%;
+      margin-bottom: 12rem;
+      text-align: center;
+
+      @media only screen and(max-width: 1430px) {
+        margin-left: 3rem;
+      }
+
+      @media only screen and(max-width: 1009px) {
+        margin-left: 0;
+      }
+
+      @media only screen and(max-width: 905px) {
+        font-size: 1.1rem;
+      }
+
+      @media only screen and(max-width: 792px) {
+        margin-left: 2rem;
+      }
+
+      @media only screen and(max-width: 770px) {
+        width: 100%;
+        margin-left: 1rem;
+      }
+    }
+
+    &__input {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #89775f;
+      color: #fff;
+      padding: 1rem 2.4rem;
+      background-color: transparent;
+      text-transform: uppercase;
+      font-family: "Elsie";
+      letter-spacing: 1.1px;
+      font-size: 2rem;
+      width: 130%;
+      margin-bottom: 3rem;
+      margin-left: -5.4rem;
+
+      @media only screen and(max-width: 792px) {
+        width: 150%;
+      }
+
+      @media only screen and(max-width: 600px) {
+        width: 160%;
+      }
+
+      &::-webkit-input-placeholder {
+        text-transform: uppercase;
+        color: rgb(207, 207, 207);
+      }
+    }
+
+    &__o {
+      color: #89775f;
+      font-family: "Elsie";
+      font-size: 1.4rem;
+      letter-spacing: 1.2px;
+      font-weight: 400;
+      width: 130%;
+      margin-top: 1rem;
+      border-bottom: 1px solid #89775f;
+      margin-bottom: 3rem;
+      padding: 1rem;
+      margin-left: -5rem;
+
+      @media only screen and(max-width: 980px) {
+        font-size: 1.3rem;
+        width: 135%;
+      }
+
+      @media only screen and(max-width: 792px) {
+        width: 150%;
+      }
+
+      @media only screen and(max-width: 735px) {
+        width: 160%;
+      }
+    }
+
+    &__check {
+      position: absolute;
+      top: 81.5%;
+      display: flex;
+      text-align: center;
+      cursor: pointer;
+      margin-left: -4.7rem;
+
+      &__l {
+        color: #89775f;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        width: 100%;
+        font-family: "Elsie";
+        margin-left: -1rem;
+        letter-spacing: 1.2px;
+
+        @media only screen and(max-width: 1415px) {
+          width: 110%;
+        }
+
+        @media only screen and(max-width: 1300px) {
+          width: 120%;
+        }
+
+        @media only screen and(max-width: 980px) {
+          width: 110%;
+          font-size: 1.4rem;
+        }
+
+        @media only screen and(max-width: 792px) {
+          width: 120%;
+        }
+
+        @media only screen and(max-width: 733px) {
+          font-size: 1.3rem;
+          width: 130%;
+        }
+      }
+    }
+
+    &__btn {
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #89775f;
+      padding: 1.3rem 2.1rem;
+      text-align: center;
+      letter-spacing: 1.2px;
+      margin-top: 4.5rem;
+      cursor: pointer;
+      transition: all 0.4s;
+      margin-left: -1.2rem;
+
+      @media only screen and(max-width: 1080px) {
+        margin-left: -0.8rem;
+        margin-top: 4rem;
+      }
+
+      &:hover {
+        background-color: #a18d72;
+      }
+    }
+  }
+
+  &__img--1 {
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+
+    @media only screen and(max-width: 890px) {
+      right: 5%;
+      bottom: 36%;
+    }
+
+    @media only screen and(max-width: 624px) {
+      height: 5.5rem;
+      right: 5%;
+    }
+
+    @media only screen and(max-width: 565px) {
+      display: none;
+    }
+  }
+
+  &__img--2 {
+    position: absolute;
+    bottom: 60%;
+    right: 10%;
+    height: 7rem;
+
+    @media only screen and(max-width: 890px) {
+      height: 6.5rem;
+      right: 5%;
+      bottom: 55%;
+    }
+
+    @media only screen and(max-width: 624px) {
+      height: 5.5rem;
+      right: 5%;
+    }
+
+    @media only screen and(max-width: 565px) {
+      display: none;
+    }
+  }
+
+  &__img--3 {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+
+    @media only screen and(max-width: 890px) {
+      left: 5%;
+      height: 5rem;
+    }
+
+    @media only screen and(max-width: 624px) {
+      height: 4rem;
+    }
+
+    @media only screen and(max-width: 565px) {
+      display: none;
+    }
+  }
+
+  &__k--1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Elsie";
+    font-weight: 400;
+    position: absolute;
+    bottom: 47%;
+    right: 8%;
+    color: #89775f;
+    letter-spacing: 1.2px;
+
+    @media only screen and(max-width: 890px) {
+      right: 3%;
+      bottom: 45%;
+    }
+
+    @media only screen and(max-width: 624px) {
+      right: 1%;
+      bottom: 42%;
+    }
+
+    @media only screen and(max-width: 565px) {
+      display: none;
+    }
+  }
+
+  &__k--2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Elsie";
+    font-weight: 400;
+    position: absolute;
+    bottom: 67%;
+    right: 8%;
+    color: #89775f;
+    letter-spacing: 1.2px;
+
+    @media only screen and(max-width: 890px) {
+      right: 3%;
+      bottom: 63%;
+    }
+
+    @media only screen and(max-width: 624px) {
+      right: 2%;
+      bottom: 61%;
+    }
+
+    @media only screen and(max-width: 565px) {
+      display: none;
+    }
+  }
+  &__k--3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Elsie";
+    font-weight: 400;
+    position: absolute;
+    bottom: 57%;
+    left: 11%;
+    color: #89775f;
+    letter-spacing: 1.2px;
+
+    @media only screen and(max-width: 890px) {
+      left: 5%;
+      bottom: 56%;
+    }
+
+    @media only screen and(max-width: 565px) {
+      opacity: 0;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  z-index: 5;
+}
+
+input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 1px solid #89775f;
+  width: 1.8rem;
+  display: inline-block;
+  height: 1.8rem;
+  padding-left: 0.2em;
+  padding-bottom: 0.2em;
+  position: absolute;
+  left: -16%;
+  top: 81.5%;
+  color: transparent;
+
+  @media only screen and(max-width: 1160px) {
+    left: -18%;
+  }
+
+  @media only screen and(max-width: 1080px) {
+    top: 80.3%;
+  }
+
+  @media only screen and(max-width: 980px) {
+    left: -22%;
+  }
+
+  @media only screen and(max-width: 900px) {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  @media only screen and(max-width: 860px) {
+    left: -24%;
+  }
+
+  @media only screen and(max-width: 750px) {
+    left: -26%;
+  }
+}
+
+input[type="checkbox"]:checked + label:before {
+  color: #fff;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.load {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -48%) rotate(45deg);
+  width: 100px;
+  height: 100px;
+  transition: opacity 3s ease;
+  animation: does 1s linear infinite;
+
+  &--1 {
+    top: 0;
+    left: 0;
+    background-color: seagreen;
+  }
+
+  &--2 {
+    top: 0;
+    right: 0;
+    background-color: aliceblue;
+  }
+
+  &--3 {
+    bottom: 0;
+    left: 0;
+    background-color: aqua;
+  }
+
+  &--4 {
+    bottom: 0;
+    right: 0;
+    background-color: black;
+  }
+}
+
+.load span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes does {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  10% {
+    height: 100px;
+    width: 100px;
+  }
+
+  50% {
+    height: 150px;
+    width: 150px;
+  }
+  90% {
+    height: 100px;
+    width: 100px;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(90deg);
+  }
+  90% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
