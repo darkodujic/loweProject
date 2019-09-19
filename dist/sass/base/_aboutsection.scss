@@ -192,11 +192,8 @@
           background-color: rgba(255, 0, 0, 0.637);
           height: 80vh;
           width: 100%;
-
           z-index: 1;
-
           margin-left: 36rem;
-
           transform: translateX(32rem);
         }
 
@@ -205,11 +202,11 @@
         }
 
         @media only screen and(max-width:604px) {
+          margin-left: 29rem;
           width: 140%;
-          margin-left: 27rem;
         }
 
-        @media only screen and(max-width: 545px) {
+        @media only screen and(max-width: 565px) {
           margin-left: 26rem;
         }
 
