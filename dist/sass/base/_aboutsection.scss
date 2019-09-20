@@ -940,11 +940,12 @@
   left: 125%;
   display: flex;
   flex-direction: column;
-  //transform: translateY(10rem);
+  transform: translateY(10rem);
   transition: all 0.8s;
   visibility: visible;
   width: 100%;
-  opacity: 1;
+  opacity: 0;
+  
 
   @media only screen and(max-width: 830px) {
     left: 125%;

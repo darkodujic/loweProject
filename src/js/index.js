@@ -1,9 +1,7 @@
 import * as btnView from "./btnView";
 
 const getExplore = function() {
-  
-  const learnmorebtn = document.querySelector(".about__btn");
-  const seeprop = document.querySelector(".default__arrow");
+
   const askq = document.querySelector(".question__detail__btn");
   const foot = document.querySelector(".footer__btn");
   const second = document.querySelector(".footer__second");
@@ -41,26 +39,12 @@ const getExplore = function() {
       }, 1500);
     });
 
-    learnmorebtn.addEventListener("click", e => {
-      setTimeout(() => {
-        btnView.deleteAbout();
-        btnView.btn();
-      }, 1500);
-    });
-
     askq.addEventListener("click", e => {
       setTimeout(() => {
         e.preventDefault();
 
         btnView.deleteAbout();
       }, 1500);
-    });
-
-    seeprop.addEventListener("click", () => {
-      setTimeout(() => {
-        btnView.deleteAbout();
-        btnView.pars();
-      }, 2500);
     });
 
     foot.addEventListener("click", e => {
