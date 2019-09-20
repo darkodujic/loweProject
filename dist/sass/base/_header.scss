@@ -339,16 +339,16 @@ right: -17%;
 }
 
 .toggle .header__sp--1 {
-  transform: rotate(-45deg) translate(-5px, 6px) translateX(-2.1rem)
+  transform: rotate(-45deg) translate(-5px, 6px) translateX(-1.1rem)
   translateY(0.1rem);
   height: 3px;
+
 }
 
 
-
 .toggle .header__sp--3 {
-  transform: rotate(45deg) translateX(-1rem) translateY(1.2rem);
   height: 3px;
+  transform: rotate(45deg) translateX(-.8rem) translateY(.3rem);
 }
 
 .toggle .header__sp--1,
