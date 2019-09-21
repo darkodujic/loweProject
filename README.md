@@ -20,7 +20,7 @@
  *  GIT
  *  GITHUB
  *  NPM
- *  WEBPACK
+ *  WEBPACK (babel, plugins..)
  
  
  # Thank you !
